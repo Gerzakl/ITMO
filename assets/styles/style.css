@@ -2,6 +2,67 @@
    box-sizing: border-box;
 }
 
-body{
+body,
+h1,
+h2,
+h3,
+p {
    margin: 0;
 }
+
+body {
+	background-color: #f3f3f3;
+}
+
+h1{
+	font-size: 72px;
+	text-align: center;
+	color: white;
+	padding-top: 210px;
+	padding-right: 200px;
+}
+
+.section-main{
+	position: relative;
+	overflow: hidden;
+	height: 100vh;
+}
+
+.header{
+	background-color: #0047ba;
+	height: 520px;
+}
+
+.russia{
+	position: absolute;
+	top: 150px;
+	right: 20px;
+	display: inline-block;
+	width: 250px;
+	height: 250px;
+	border-radius: 50%;
+	background-color: white;
+	background-image: url(../img/ITMO.png);
+	background-repeat: no-repeat;
+	background-position: 10px center;
+}
+
+.optics{
+	position: absolute;
+	transform: rotate(90deg);
+	top: 600px;
+	left: -55px;
+}
+
+.IT{
+	position: absolute;
+	top: 800px;
+	right: 5px;
+}
+
+.section-features {
+	padding-top: 20px;
+	background-color: red;
+}
+
+
