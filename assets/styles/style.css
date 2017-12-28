@@ -30,8 +30,6 @@ h1{
 	font-size: 72px;
 	text-align: center;
 	color: white;
-	padding-top: 210px;
-	padding-right: 200px;
 }
 
 p{
@@ -40,7 +38,7 @@ p{
 }
 
 .container{
-	display: inline-block;
+	width: 100%;
 }
 
 .section-main{
@@ -54,33 +52,46 @@ p{
 	height: 520px;
 }
 
-.russia,
-.git,
-.vk{
+.russia {
 	position: absolute;
-	top: 150px;
-	right: 20px;
+	top: 200px;
+	right: 100px;
 	display: inline-block;
-	width: 250px;
-	height: 250px;
+	width: 200px;
+	height: 200px;
 	border-radius: 50%;
 	background-color: white;
 	background-image: url(../img/ITMO.png);
 	background-repeat: no-repeat;
-	background-position: 10px center;
+	background-position: -11px center;
+}
+
+.git,
+.vk {
+	display: block;
+	width: 200px;
+	height: 200px;
+	margin: 0 auto;
+	border-radius: 50%;
+	background-color: white;
+	background-image: url(../img/ITMO.png);
+	background-repeat: no-repeat;
+	background-position: -11px center;
 }
 
 .optics{
 	position: absolute;
 	transform: rotate(90deg);
-	top: 600px;
-	left: -55px;
+	top: 500px;
+	left: -35px;
+	width: 200px;
 }
 
 .IT{
 	position: absolute;
-	top: 800px;
-	right: -145px;
+	top: 700px;
+	right: 50px;
+	width: 150px;
 }
 
 .section-features {
@@ -106,6 +117,10 @@ h3{
 	padding-bottom: 0;
 }
 
+.feature-img img {
+	max-width: 100%;
+}
+
 .feature{
 	max-width: 100%;
 	border-bottom: 1px solid grey;
@@ -127,19 +142,32 @@ h3{
 }
 
 .vk{
-	top: 100px;
-	left: -85px;
-	background-image: url(../img/iam.jpg); 
+	width: 100px;
+	height: 100px;
+	bottom: 50px;
+	left: 85px;
+	background-image: url(../img/me.jpg);
+	background-size: cover;
+	background-position: center 0; 
 }
 
 .git{
-	top: 100px;
-	left: 22px;
-	background-image: url(../img/git.jpg);
+	width: 100px;
+	height: 100px;
+	bottom: 50px;
+	right: 10px;
+	background-image: url(../img/git.png);
+	background-position: 5px center;
 
 }
-/*
-@media screen and (min-width:768px){
+
+h4{
+	text-align: center;
+	font-size: 30px;
+	padding: 20px 0;
+}
+
+@media screen and (min-width: 768px) {
 	.vk{
 		left: 75px;
 		top: 100px;
@@ -147,15 +175,34 @@ h3{
 
 	.optics{
 		top: 500px;
+		left: -40px;
+		width: 300px;
 	}
 
 	.IT{
-		top: 500px;
-		right: 50px;
-		width: 350px;
-		height: 350px;
+		top: 600px;
+		width: 400px;
+		height: 400px;
 	}
-} */
 
-.feature:nth-child(2) img{
-	width: 500px;
+} 
+
+@media screen and (min-width: 768px) {
+	.vk{
+		left: 75px;
+		top: 100px;
+	}
+
+	.optics{
+		top: 500px;
+		left: -40px;
+		width: 300px;
+	}
+
+	.IT{
+		top: 600px;
+		width: 400px;
+		height: 400px;
+	}
+
+}
