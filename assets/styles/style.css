@@ -1,11 +1,18 @@
-*{
-   box-sizing: border-box;
+@font-face{
+	font-family: "Made Winter";
+ 	src: url("../fonts/Made_Winter_Inline_PERSONAL_USE.otf");
 }
 
+*{
+   box-sizing: border-box;
+   font-family: "Made Winter";
+}
+  
 body,
 h1,
 h2,
 h3,
+h4,
 p {
    margin: 0;
 }
@@ -14,12 +21,26 @@ body {
 	background-color: #f3f3f3;
 }
 
+ul{
+	list-style-type: none;
+	padding-bottom: 10px;
+}
+
 h1{
 	font-size: 72px;
 	text-align: center;
 	color: white;
 	padding-top: 210px;
 	padding-right: 200px;
+}
+
+p{
+	padding-bottom: 5px;
+	padding-left: 40px;
+}
+
+.container{
+	display: inline-block;
 }
 
 .section-main{
@@ -33,7 +54,9 @@ h1{
 	height: 520px;
 }
 
-.russia{
+.russia,
+.git,
+.vk{
 	position: absolute;
 	top: 150px;
 	right: 20px;
@@ -57,12 +80,85 @@ h1{
 .IT{
 	position: absolute;
 	top: 800px;
-	right: 5px;
+	right: -145px;
 }
 
 .section-features {
 	padding-top: 20px;
-	background-color: red;
+	color: white;
+	background-color: #0047ba;
 }
 
+h3{
+	font-size: 36px;
+	line-height: 36px;
+	padding-bottom: 10px;
+	text-align: center;
+}
 
+.feature-img{
+	line-height: 0;
+	text-align: center;
+	max-width: 100%;
+	padding-bottom: 20px;
+}
+
+.feature-img:last-child{
+	padding-bottom: 0;
+}
+
+  
+.feature{
+	max-width: 100%;
+	border-bottom: 1px solid grey;
+	margin-bottom: 10px; 
+}
+
+.feature:last-child{
+	border-bottom: 0;
+	margin-bottom: 0;
+}
+
+.info{
+	position: relative;
+	display: inline-block;
+	font-size: 36px;
+	padding-top: 10px;
+	padding-left: 20px;
+	text-align: center;
+}
+
+.vk{
+	top: 100px;
+	left: -85px;
+	background-image: url(../img/iam.jpg); 
+}
+
+.git{
+	top: 100px;
+	left: 22px;
+	background-image: url(../img/git.jpg);
+
+}
+/*
+@media screen and (min-width:768px){
+	.vk{
+		left: 75px;
+		top: 100px;
+	}
+
+	.optics{
+		top: 500px;
+	}
+
+	.IT{
+		top: 500px;
+		right: 50px;
+		width: 350px;
+		height: 350px;
+	}
+} */
+
+.feature:nth-child(2) img{
+	width: 500px;
+}
