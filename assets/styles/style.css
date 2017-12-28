@@ -1,6 +1,10 @@
 @font-face{
 	font-family: "Made Winter";
+<<<<<<< HEAD
  	src: url("../fonts/Made_Winter_Inline_PERSONAL_USE.otf");
+=======
+	src: url("../fonts/Made_Winter_Inline_PERSONAL_USE.otf");
+>>>>>>> 9fdc78fa65bd7a03a3e68fa50a5b64dbeb09b5e4
 }
 
 *{
@@ -36,7 +40,10 @@ h1{
 
 p{
 	padding-bottom: 5px;
+<<<<<<< HEAD
 	padding-left: 40px;
+=======
+>>>>>>> 9fdc78fa65bd7a03a3e68fa50a5b64dbeb09b5e4
 }
 
 .container{
@@ -95,7 +102,10 @@ h3{
 	padding-bottom: 10px;
 	text-align: center;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 9fdc78fa65bd7a03a3e68fa50a5b64dbeb09b5e4
 .feature-img{
 	line-height: 0;
 	text-align: center;
@@ -103,16 +113,20 @@ h3{
 	padding-bottom: 20px;
 }
 
+<<<<<<< HEAD
 .feature-img:last-child{
 	padding-bottom: 0;
 }
 
   
+=======
+>>>>>>> 9fdc78fa65bd7a03a3e68fa50a5b64dbeb09b5e4
 .feature{
 	max-width: 100%;
 	border-bottom: 1px solid grey;
 	margin-bottom: 10px; 
 }
+<<<<<<< HEAD
 
 .feature:last-child{
 	border-bottom: 0;
@@ -161,4 +175,9 @@ h3{
 
 .feature:nth-child(2) img{
 	width: 500px;
+=======
+
+@media screen and (min-width:768px) {
+	
+>>>>>>> 9fdc78fa65bd7a03a3e68fa50a5b64dbeb09b5e4
 }
